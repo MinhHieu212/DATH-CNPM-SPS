@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "./Header.scss";
 
 const Header = ({ showSideBar, setShowSideBar, handleOnClickHome }) => {
   function handleShowSideBar() {
@@ -152,7 +153,7 @@ const Header = ({ showSideBar, setShowSideBar, handleOnClickHome }) => {
         </svg>
         <Link to="/Login">
           <span className="Header_UserName text-white pr-3 font-semibold cursor-pointer">
-            Login
+            Đăng nhập
           </span>
         </Link>
       </div>

@@ -1,9 +1,12 @@
-import Home from "../Pages/Home";
-import Printing from "../Pages/Printing";
-import Support from "../Pages/Support";
-import History from "../Pages/History";
-import Login from "../Pages/Login";
-import Error from "../Pages/Error";
+import Home from "../Pages/Home/Home";
+import Printing from "../Pages/Printing/Printing";
+import Support from "../Pages/Support/Support";
+import History from "../Pages/History/History";
+import Login from "../Pages/Login/Login";
+import Report from "../Pages/Report/Report";
+import Manage from "../Pages/Manage/Manage";
+import Config from "../Pages/Config/Config";
+import Activities from "../Pages/Activities/Activities";
 
 // no login
 const publicRoutes = [
@@ -38,8 +41,24 @@ const publicRoutes = [
     layout: "default",
   },
   {
-    path: "/Login",
-    component: Login,
+    path: "/Config",
+    component: Config,
+    layout: "default",
+  },
+  {
+    path: "/Manage",
+    component: Manage,
+    layout: "default",
+  },
+  {
+    path: "/Report",
+    component: Report,
+    layout: "default",
+  },
+  {
+    path: "/Activities",
+    component: Activities,
+    layout: "default",
   },
   {
     path: "*",
