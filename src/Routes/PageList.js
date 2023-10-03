@@ -8,7 +8,7 @@ import Manage from "../Pages/Manage/Manage";
 import Config from "../Pages/Config/Config";
 import Activities from "../Pages/Activities/Activities";
 
-// no login
+// no required login
 const publicRoutes = [
   {
     path: "/",
@@ -21,7 +21,7 @@ const publicRoutes = [
     layout: "default",
   },
   {
-    path: "/SPS-SYSTEM-FE",
+    path: "/DATH-CNPM-SPS",
     component: Home,
     layout: "default",
   },
@@ -59,6 +59,10 @@ const publicRoutes = [
     path: "/Activities",
     component: Activities,
     layout: "default",
+  },
+  {
+    path: "/Login",
+    component: Login,
   },
   {
     path: "*",
